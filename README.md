@@ -4,6 +4,8 @@
 
 **1.** Add the required exceptions in the Reto 1 code assigments.
 
+See the folder: Package_Shape_With_Exceptions
+
 - Basic operations:
 
   Look at the file: Punto_1.py
@@ -238,6 +240,8 @@ except Exception as error:              # Other exceptions
 
 **2.** In the package Shape identify at least cases where exceptions are needed (maybe when validate input data, or math procedures) explain them clearly using comments and add them to the code.
 
+See the folder: Package_Shape_With_Exceptions
+
 ```python
 from paquete_5a.shape import Point
 from paquete_5a.shape import Isosceles
@@ -346,5 +350,3 @@ except AttributeError as error:        # Attribute error, also because i am usin
 except Exception as error:             # Other exceptions
     print(f"Error: {error}")
 ```
-
-* Look the folder: Package_Shape_With_Exceptions
