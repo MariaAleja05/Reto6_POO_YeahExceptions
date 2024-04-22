@@ -1,4 +1,4 @@
-suma = 0          # Se definen variables
+suma = 0          # Variables are defined
 resta = 0
 divi = 0
 multi = 0
@@ -6,36 +6,36 @@ num1 : float = 0
 num2 : float = 0
 operacion: str
 
-def operaciones(num1, num2, operacion): # Función para realizar la operación deseada, con valores de entrega establecidos por el usuario
+def operaciones(num1, num2, operacion): # Function to perform the desired operation with user-defined values
     if operacion == "+":
         suma = num1 + num2
-        print("El resultado de la suma es: " + str(suma))
+        print("The result of the addition is: " + str(suma))
 
     elif operacion == "-":
         resta = num1 - num2
-        print("El resultado de la resta es: " + str(resta))
+        print("The result of the subtraction is: " + str(resta))
 
     elif operacion == "/":
-        if num2 != 0:         # Si se puede realizar la división cuando el segundo número es diferente de cero
+        if num2 != 0:         # Perform division if the second number is not zero
             divi = num1 / num2
-            print("El resultado de la división es: " + str(divi))
-        else:                 # No se puede realizar la división cuando el segundo número es cero
-            print("Los números ingresados no son válidos para realizar la operación")
+            print("The result of the division is: " + str(divi))
+        else:                 # Cannot perform division if the second number is zero
+            print("The numbers entered are not valid for the operation")
 
     elif operacion == "*":
         multi = num1 * num2
-        print("El resultado de la multiplicación es: " + str(multi))
+        print("The result of the multiplication is: " + str(multi))
 
-# Manejo excepciones
+# Exception handling
 try:
-    operacion = input("Ingrese '+' si desea realizar una suma; '-' si desea realizar una resta; '/' si desea realizar una división; '*' si desea realizar una multiplicación: ")
-    num1 = float(input("Ingrese el primer número: "))
-    num2 = float(input("Ingrese el segundo número: "))
-    operaciones(num1, num2, operacion)    # Se llama la función operaciones para que se realice el calculo entre los números
+    operacion = input("Enter '+' for addition, '-' for subtraction, '/' for division, '*' for multiplication: ")
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operaciones(num1, num2, operacion)    # Call the function to perform the calculation
 
-except ValueError as error:             # Valor no valido
-    print(f"Error general: {error}")
-except ZeroDivisionError as error:      # División por cero
-    print(f"Error general: {error}")
-except Exception as error:              # Otras excepciones
-    print(f"Error general: {error}")
+except ValueError as error:             # Invalid value
+    print(f"General error: {error}")
+except ZeroDivisionError as error:      # Division by zero
+    print(f"General error: {error}")
+except Exception as error:              # Other exceptions
+    print(f"General error: {error}")
