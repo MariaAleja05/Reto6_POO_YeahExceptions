@@ -6,7 +6,9 @@
 
 - Basic operations:
 
-  ```python
+  Mirar archivo: Punto_1.py
+
+```python
 suma = 0          # Se definen variables
 resta = 0
 divi = 0
@@ -34,8 +36,6 @@ def operaciones(num1, num2, operacion): # Función para realizar la operación d
     elif operacion == "*":
         multi = num1 * num2
         print("El resultado de la multiplicación es: " + str(multi))
-
-
 # Manejo excepciones
 try:
     operacion = input("Ingrese '+' si desea realizar una suma; '-' si desea realizar una resta; '/' si desea realizar una división; '*' si desea realizar una multiplicación: ")
@@ -49,33 +49,38 @@ except ZeroDivisionError as error:      # División por cero
     print(f"Error general: {error}")
 except Exception as error:              # Otras excepciones
     print(f"Error general: {error}")
-  ```
-  
+```
 - Palindrome:
 
-  ```python
+  Mirar archivo: Punto_2.py
 
-  ```
+```python
+
+```
   
 - Prime numbers:
 
-  ```python
+  Mirar archivo: Punto_3.py
 
-  ```
+```python
+
+```
    
 - Greatest sum:
 
-  ```python
+  Mirar archivo: Punto_4.py
 
-  ```
+```python
+
+```
   
 - Same characters:
 
-  ```python
+  Mirar archivo: Punto_5.py
 
-  ```
+```python
 
-* Mirar carpeta
+```
 
 **2.** In the package Shape identify at least cases where exceptions are needed (maybe when validate input data, or math procedures) explain them clearly using comments and add them to the code.
 
