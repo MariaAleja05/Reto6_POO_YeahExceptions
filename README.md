@@ -4,7 +4,7 @@
 
 **1.** Add the required exceptions in the Reto 1 code assigments.
 
-See the folder: Package_Shape_With_Exceptions
+See the folder: Reto_1_With_Exceptions
 
 - Basic operations:
 
